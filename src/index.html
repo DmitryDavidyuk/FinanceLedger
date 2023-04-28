@@ -1,263 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-  @@include('html/_head.htm',{ "title":"Finance Ledger" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        <section class="page_hero hero">
-          <div class="hero__container">
-            <h1 class="hero__title">The Sky Is The Limit</h1>
-            <div class="hero__text">
-              We provide world class financial assistance
-            </div>
-            <button type="button" class="hero_button button">Read More</button>
-          </div>
-        </section>
-        <section class="page__what what">
-          <div class="what__image"></div>
-          <div class="what__body body">
-            <h3 class="body__subtitle subtitle">What you are looking for</h3>
-            <h2 class="body__title title">We provide bespoke solutions</h2>
-            <p class="body__text text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate, ipsum dignissimos quae laudantium asperiores nam
-              aliquid impedit harum illum dolore explicabo ab dolores itaque
-              rerum temporibus doloribus iste maiores deleniti?
-            </p>
-            <button type="buttom" class="body__buttom button body__buttom_br">
-              Read More
-            </button>
-          </div>
-        </section>
-        <section class="page__galery galery">
-          <div class="galery__container">
-            <h3 class="galery__subtitle subtitle">This is what we do</h3>
-            <h2 class="galery__title title">Business Cases</h2>
-            <p class="galery__text text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, sapiente!
-            </p>
-            <div class="galery__body">
-              <div data-gallery class="galery__items">
-                <a href="@img/galery/cases/cases1@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases1.webp    1x,
-                        @img/galery/cases/cases1@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases1.jpg"
-                      srcset="@img/galery/cases/cases1@2x.jpg"
-                    />
-                  </picture>
-                </a>
-                <a href="@img/galery/cases/cases2@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases2.webp    1x,
-                        @img/galery/cases/cases2@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases2.jpg"
-                      srcset="@img/galery/cases/cases2@2x.jpg"
-                    />
-                  </picture>
-                </a>
-                <a href="@img/galery/cases/cases3@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases3.webp    1x,
-                        @img/galery/cases/cases3@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases3.jpg"
-                      srcset="@img/galery/cases/cases3@2x.jpg"
-                    />
-                  </picture>
-                </a>
-                <a href="@img/galery/cases/cases4@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases4.webp    1x,
-                        @img/galery/cases/case41@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases4.jpg"
-                      srcset="@img/galery/cases/cases4@2x.jpg"
-                    />
-                  </picture>
-                </a>
-                <a href="@img/galery/cases/cases5@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases5.webp    1x,
-                        @img/galery/cases/cases5@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases5.jpg"
-                      srcset="@img/galery/cases/cases5@2x.jpg"
-                    />
-                  </picture>
-                </a>
-                <a href="@img/galery/cases/cases6@2x.jpg ">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/galery/cases/cases6.webp    1x,
-                        @img/galery/cases/cases6@2x.webp 2x
-                      "
-                    />
-                    <img
-                      class="gallery__image"
-                      alt="image"
-                      src="@img/galery/cases/cases6.jpg"
-                      srcset="@img/galery/cases/cases6@2x.jpg"
-                    />
-                  </picture>
-                </a>
-              </div>
-            </div>
-            <div class="galery__line"></div>
-          </div>
-        </section>
-        <section class="page__blog blog">
-          <div class="blog__body body blog__body_blue">
-            <h3 class="body__subtitle subtitle">April 16 2020</h3>
-            <h2 class="body__title title">Blog Post One</h2>
-            <p class="body__text text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate, ipsum dignissimos quae laudantium asperiores nam
-              aliquid impedit harum illum dolore explicabo ab dolores itaque
-              rerum temporibus doloribus iste maiores deleniti?
-            </p>
-            <button type="buttom" class="body__buttom button body__buttom-blue">
-              Read Our Blog
-            </button>
-          </div>
-          <div class="blog__image"></div>
-        </section>
-        <section class="page__team team">
-          <div class="team__container">
-            <h3 class="team__subtitle subtitle">Who we are</h3>
-            <h2 class="team__title title">Our Professional Team</h2>
-            <p class="team__text text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, sapiente!
-            </p>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Верстка «NEW_PROJECT_NAME»</title>
+	</head>
+	<body>
+		<div class="rootpage">
+			<h1>Верстка «NEW_PROJECT_NAME»</h1>
+			<div class="rootpage__info">
+				Опис проєкту
+			</div>
+			<h2>Готові сторінки:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Головна</a></li>
+			</ol>
+			<h2>Попапи:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Дякую за замовлення!</h2>
+				<p>Буду радий (да) гарному відгуку.</p>
+				<p>Звертайтесь ще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мої контакти:</h2>
+				<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
+				<p>Соц. мережі: <a href="">посилання</a></p>
+			</div>
+		</div>
+	</body>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #5e5373;
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+		}
+		a {
+			text-decoration: underline;
+			color: #ebe691
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #aaa768;
+		}
+			a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		.rootpage{
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		@media (max-width: 767px) {
+			.rootpage{
+				padding:30px 15px;
+			}
+		}
+		h1 {
+			color: #ebe691;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+		h2 {
+			color: #ebe691;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+		@media (max-width: 767px) {
+			 h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+		.rootpage__info{
+			line-height: 140%;
+			margin: 0px 0px 1.5rem 0px;
+		}
 
-            <div class="team__cards">
-              <div class="team__cards_card card-team">
-                <div class="card-team__image">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/team/person1.webp    1x,
-                        @img/team/person1@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="@img/team/person1.jpg"
-                      srcset="@img/team/person1@2x.jpg 2x"
-                      alt="John Doe"
-                    />
-                  </picture>
-                  <div class="card-team__overlay">
-                    <div class="icon-facebook"></div>
-                    <div class="icon-twitter"></div>
-                    <div class="icon-youtube"></div>
-                    <div class="icon-linkedin"></div>
-                  </div>
-                </div>
-                <div class="card-team__name">John Doe</div>
-                <div class="card-team__position">President</div>
-              </div>
-              <div class="team__cards_card card-team">
-                <div class="card-team__image">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/team/person2.webp    1x,
-                        @img/team/person2@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="@img/team/person2.jpg"
-                      srcset="@img/team/person2@2x.jpg 2x"
-                      alt="John Doe"
-                    />
-                  </picture>
-                  <div class="card-team__overlay">
-                    <div class="icon-facebook"></div>
-                    <div class="icon-twitter"></div>
-                    <div class="icon-youtube"></div>
-                    <div class="icon-linkedin"></div>
-                  </div>
-                </div>
-                <div class="card-team__name">Jane Doe</div>
-                <div class="card-team__position">Vice President</div>
-              </div>
-              <div class="team__cards_card card-team">
-                <div class="card-team__image">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcset="
-                        @img/team/person3.webp    1x,
-                        @img/team/person3@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="@img/team/person3.jpg"
-                      srcset="@img/team/person3@2x.jpg 2x"
-                      alt="John Doe"
-                    />
-                  </picture>
-                  <div class="card-team__overlay">
-                    <a href="" class="icon-facebook"></a>
-                    <a href="" class="icon-twitter"></a>
-                    <a href="" class="icon-youtube"></a>
-                    <a href="" class="icon-linkedin"></a>
-                  </div>
-                </div>
-                <div class="card-team__name">Steve Smith</div>
-                <div class="card-team__position">Marketing Head</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        section.page__
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+		.rootpage__list{
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+		.rootpage__list li:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius: 200px;
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+		@media (max-width: 767px){
+		.rootpage__contacts,
+		.rootpage__tnx{
+			border-radius:40px;
+			padding: 20px;
+		}
+		}
+		.rootpage__contacts{
+			background: #32b5a4;
+			
+		}
+		.rootpage__contacts a{
+			color: #ebe691;
+		}
+		.rootpage__tnx{
+			background: #c22d63;
+			margin: 0px 0px 1rem 0px;
+		}
+	</style>
 </html>

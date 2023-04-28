@@ -12,7 +12,7 @@
 */
 
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
-window["FLS"] = true;
+window['FLS'] = true;
 
 // Підключення основного файлу стилів
 import "../scss/style.scss";
@@ -193,7 +193,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 
 // Функціонал додавання класів до хедеру під час прокручування
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-flsScroll.headerScroll();
+// flsScroll.headerScroll();
 
 // Модуль анімація цифрового лічильника
 // Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
@@ -208,7 +208,7 @@ flsScroll.headerScroll();
 Документація плагіна: https://www.lightgalleryjs.com/docs/
 Сніппет(HTML):
 */
-import "./files/gallery.js";
+// import "./files/gallery.js";
 
 // ========================================================================================================================================================================================================================================================
 // Масонрі сітка ========================================================================================================================================================================================================================================================
