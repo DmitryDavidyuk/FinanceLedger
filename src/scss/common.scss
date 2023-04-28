@@ -1,1 +1,70 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.page {
+  // .page_hero
+  &__herot {
+  }
+  &__what {
+  }
+  &__galery {
+  }
+  &__blog {
+  }
+  &__team {
+  }
+}
+
+.subtitle {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: math.div(25, 18);
+  }
+}
+.title {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  font-size: 32px;
+  line-height: math.div(44, 32);
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: math.div(48, 40);
+  }
+}
+.text {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  line-height: math.div(22, 16);
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: math.div(25, 18);
+  }
+}
+
+.button {
+  display: inline-flex;
+  font-size: 18px;
+  line-height: math.div(24.51, 18);
+  background-color: $primary;
+  padding: 16px 32px;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: $primaryHover;
+  }
+
+  &::before {
+    content: url("../img/icons/arrow.svg");
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 18px;
+  }
+}
