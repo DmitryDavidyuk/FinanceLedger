@@ -15,7 +15,19 @@
           </div>
         </section>
         <section class="page__what what">
-          <div class="what__image"></div>
+          <div class="what__image image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="@img/what/people.webp 1x, @img/what/people@1x.webp 2x"
+              />
+              <img
+                src="@img/what/people.jpg"
+                srcset="@img/what/people@2x.jpg 2x"
+                alt="People"
+              />
+            </picture>
+          </div>
           <div class="what__body body">
             <h3 class="body__subtitle subtitle">What you are looking for</h3>
             <h2 class="body__title title">We provide bespoke solutions</h2>
@@ -148,6 +160,19 @@
           </div>
         </section>
         <section class="page__blog blog">
+          <div class="blog__image image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="@img/blog/blog.webp 1x, @img/blog/blog@2x.webp 2x"
+              />
+              <img
+                src="@img/blog/blog.jpg"
+                srcset="@img/blog/blog2x.jpg 2x"
+                alt="People"
+              />
+            </picture>
+          </div>
           <div class="blog__body body blog__body_blue">
             <h3 class="body__subtitle subtitle">April 16 2020</h3>
             <h2 class="body__title title">Blog Post One</h2>
@@ -155,13 +180,12 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate, ipsum dignissimos quae laudantium asperiores nam
               aliquid impedit harum illum dolore explicabo ab dolores itaque
-              rerum temporibus doloribus iste maiores deleniti?
+              rerum temporibus doloribus iste maiores deleniti? lorem55
             </p>
             <button type="buttom" class="body__buttom button body__buttom-blue">
               Read Our Blog
             </button>
           </div>
-          <div class="blog__image"></div>
         </section>
         <section class="page__team team">
           <div class="team__container">
@@ -190,10 +214,10 @@
                     />
                   </picture>
                   <div class="card-team__overlay">
-                    <div class="icon-facebook"></div>
-                    <div class="icon-twitter"></div>
-                    <div class="icon-youtube"></div>
-                    <div class="icon-linkedin"></div>
+                    <a href="" class="icon-facebook"></a>
+                    <a href="" class="icon-twitter"></a>
+                    <a href="" class="icon-youtube"></a>
+                    <a href="" class="icon-linkedin"></a>
                   </div>
                 </div>
                 <div class="card-team__name">John Doe</div>
@@ -216,10 +240,10 @@
                     />
                   </picture>
                   <div class="card-team__overlay">
-                    <div class="icon-facebook"></div>
-                    <div class="icon-twitter"></div>
-                    <div class="icon-youtube"></div>
-                    <div class="icon-linkedin"></div>
+                    <a href="" class="icon-facebook"></a>
+                    <a href="" class="icon-twitter"></a>
+                    <a href="" class="icon-youtube"></a>
+                    <a href="" class="icon-linkedin"></a>
                   </div>
                 </div>
                 <div class="card-team__name">Jane Doe</div>
@@ -254,7 +278,56 @@
             </div>
           </div>
         </section>
-        section.page__
+        <section class="page__callback callback">
+          <div class="callback__image image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  @img/callback/contact.webp    1x,
+                  @img/callback/contact@2x.webp 2x
+                "
+              />
+              <img
+                src="@img/callback/contact.jpg"
+                srcset="@img/callback/contact@2x.jp 2x"
+                alt="callback"
+              />
+            </picture>
+          </div>
+          <div class="callback__body body">
+            <h2 class="body__title title">Request Callback</h2>
+            <form class="form" action="">
+              <div class="form__item">
+                <input
+                  id="name"
+                  autocomplete="off"
+                  type="text"
+                  name="form[name]"
+                  data-error="Помилка"
+                  class="form__input"
+                  placeholder=" "
+                />
+                <label for="name">Enter your name</label>
+              </div>
+              <div class="form__item">
+                <input
+                  id="email"
+                  autocomplete="off"
+                  type="email"
+                  name="form[name]"
+                  data-error="This is a required field"
+                  class="form__input"
+                  data-required="email"
+                  placeholder=" "
+                />
+                <label for="email">Enter email</label>
+              </div>
+
+              <button type="submit" class="form__button button">Send</button>
+            </form>
+          </div>
+        </section>
       </main>
       @@include('html/_footer.htm',{})
     </div>
